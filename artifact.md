@@ -1,59 +1,47 @@
-# Travlr Getaways – Full-Stack MEAN Application
+# Travlr Getaways – Full Stack MEAN Application
 
-Travlr Getaways is a full-stack web application developed using MongoDB, Express, Angular, and Node.js. It allows public users to browse travel destinations while administrators manage trip data through protected routes.
+Travlr Getaways is a full-stack web application built using:
 
-For this capstone, I enhanced the system across three categories:
+- MongoDB
+- Express.js
+- Angular
+- Node.js
 
-- Software Design and Engineering
-- Algorithms and Data Structures
-- Databases
+The system allows users to browse travel destinations while administrators manage trip data through protected backend routes.
 
 ---
 
-## Software Design & Engineering Enhancement
+## Enhancement Overview
 
-Enhancements included:
+For this capstone, I enhanced the system across three core categories:
 
-- Modular backend refactoring
+### 1. Software Design & Engineering
+
+- Refactored backend for modular architecture
 - Centralized error handling
-- Async/await restructuring
-- Environment-based configuration management
-- Authentication-protected administrative routes
+- Converted asynchronous logic to async/await
+- Secured configuration using environment variables
+- Protected administrative routes with authentication
 
-These changes improved maintainability, reduced attack surface exposure, and aligned the system with industry-grade development standards.
+### 2. Algorithms & Data Structures
 
----
+- Implemented dynamic query filtering
+- Added server-side pagination
+- Introduced indexed search optimization
+- Evaluated read/write tradeoffs for performance
 
-## Algorithms & Data Structures Enhancement
+### 3. Database Enhancement
 
-Enhancements included:
-
-- Dynamic query filtering
-- Server-side pagination
-- Indexed search optimization
-- Reduced redundant data retrieval
-- Evaluated read/write performance tradeoffs
-
-These improvements increased scalability, improved efficiency, and reduced excessive data exposure.
-
----
-
-## Database Enhancement
-
-Enhancements included:
-
-- Strict Mongoose schema validation
-- Required fields and type enforcement
-- Role-based access control (RBAC)
-- Secure environment variable configuration
-- Input sanitization and NoSQL injection prevention
-
-These changes strengthened data integrity and demonstrated a security-first database design approach.
+- Implemented strict Mongoose schema validation
+- Enforced required fields and type constraints
+- Added role-based access control (RBAC)
+- Prevented NoSQL injection through input validation
 
 ---
 
 ## Security Integration
 
-Across all enhancements, security was treated as a foundational design principle. Defensive coding practices were implemented to anticipate misuse and reduce vulnerability exposure.
+Security was treated as a foundational design principle across all enhancements.  
+Defensive programming techniques were implemented to reduce vulnerabilities and protect system resources.
 
-This artifact demonstrates my readiness for secure backend development and application security roles.
+This artifact demonstrates my ability to engineer secure, scalable, production-aware systems.
