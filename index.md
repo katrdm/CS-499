@@ -18,7 +18,7 @@ This ePortfolio showcases my ability to design, enhance, and secure a full-stack
 ## Navigation
 
 - [Artifact – Travlr Getaways](artifact.md)
-- [Code Review Video](code-review.md)
+- [Informal Code Review](code-review.md)
 - [Final Submission Document](CS499_Final_Project_Complete_Submission.docx)
 
 ---
