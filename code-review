@@ -2,94 +2,99 @@
 
 ## Overview
 
-This written code review serves as a walkthrough of the original Travlr Getaways application prior to enhancement. It outlines existing functionality, identifies areas for improvement, and explains the enhancements implemented across software engineering, algorithms, and database architecture.
+This written code review documents the evaluation of the original Travlr Getaways full-stack MEAN application prior to enhancement. It outlines existing functionality, identifies architectural and security weaknesses, and explains the enhancements implemented across software engineering, algorithms, and database design.
 
 ---
 
 ## Existing Functionality
 
-The original Travlr Getaways application was developed using the MEAN stack (MongoDB, Express, Angular, Node.js).
+The original application was built using:
 
-Core functionality included:
+- MongoDB
+- Express.js
+- Angular
+- Node.js
 
-- Public-facing travel package browsing
+Core features included:
+
+- Public-facing browsing of travel packages
 - Administrative CRUD operations for trip management
-- RESTful API endpoints for data retrieval
-- MongoDB persistence layer
+- RESTful API endpoints
+- MongoDB data persistence
 
-The system was functional but designed primarily as a course prototype rather than a production-ready application.
+The system functioned correctly as a course prototype but required structural, performance, and security improvements to align with production-level standards.
 
 ---
 
-## Code Analysis – Areas for Improvement
+## Code Analysis – Identified Improvement Areas
 
-After reviewing the original implementation, several improvement areas were identified:
+After reviewing the original implementation, several opportunities for improvement were identified:
 
-### 1. Architectural Structure
-Backend logic required clearer separation of concerns between routes, controllers, and middleware.
+### 1. Backend Structure
+Route handling, business logic, and middleware responsibilities required clearer separation of concerns to improve maintainability.
 
 ### 2. Error Handling
-Error responses were inconsistent and could potentially expose internal server details.
+Error responses were inconsistent and could potentially expose internal system details.
 
-### 3. Database Validation
-Schema enforcement was minimal, increasing risk of malformed or malicious input.
+### 3. Schema Enforcement
+Database validation rules were minimal, increasing risk of malformed or malicious input.
 
-### 4. Query Efficiency
-Database queries did not implement indexing or pagination, limiting scalability.
+### 4. Query Performance
+Database queries lacked indexing and pagination, limiting scalability.
 
 ### 5. Security Controls
-Authentication and role-based access controls were limited, increasing potential attack surface.
+Administrative routes required stronger authentication and access restrictions to reduce attack surface exposure.
 
 ---
 
-## Planned and Implemented Enhancements
+## Enhancements Implemented
 
-### Software Design & Engineering Enhancements
+### Software Design & Engineering
 
 - Refactored backend into modular architecture.
 - Implemented centralized error-handling middleware.
 - Converted promise chains to async/await.
-- Secured configuration using environment variables.
-- Protected administrative routes with authentication logic.
+- Secured configuration through environment variables.
+- Protected administrative routes using authentication logic.
 
-These improvements increased maintainability, reduced coupling, and improved security posture.
+These changes improved maintainability, reduced coupling, and strengthened security posture.
 
 ---
 
-### Algorithms & Data Structures Enhancements
+### Algorithms & Data Structures
 
 - Implemented dynamic query filtering.
 - Added server-side pagination.
 - Introduced indexed search optimization.
 - Reduced redundant data retrieval.
-- Evaluated performance tradeoffs between read and write operations.
+- Evaluated read/write tradeoffs for performance optimization.
 
-These changes improved efficiency and scalability while reducing excessive data exposure.
+These enhancements improved scalability and reduced unnecessary system load.
 
 ---
 
 ### Database Enhancements
 
-- Implemented strict Mongoose schema validation.
-- Enforced required fields and data type constraints.
-- Added role-based access control (RBAC).
-- Introduced input validation middleware to prevent NoSQL injection.
-- Secured credentials using environment variables.
+- Enforced strict Mongoose schema validation.
+- Required fields and data type constraints.
+- Implemented role-based access control (RBAC).
+- Added input validation middleware to mitigate NoSQL injection.
+- Secured database credentials using environment variables.
 
-These modifications strengthened data integrity and reinforced a security-first development approach.
+These changes strengthened data integrity and demonstrated a proactive security mindset.
 
 ---
 
-## Alignment with CS 499 Outcomes
+## Alignment with CS 499 Program Outcomes
 
 This code review and enhancement process demonstrates:
 
-1. Collaborative system design through modular architecture.
-2. Professional communication through structured technical documentation.
-3. Application of algorithmic principles and performance tradeoffs.
-4. Use of modern tools and frameworks in full-stack development.
-5. A proactive security mindset that anticipates misuse and mitigates vulnerabilities.
+1. Collaborative system design through modular and maintainable architecture.
+2. Professional communication via structured technical documentation.
+3. Application of algorithmic principles and performance tradeoff evaluation.
+4. Use of modern full-stack development tools and practices.
+5. A security-first approach that anticipates misuse and mitigates vulnerabilities.
 
 ---
 
-This written code review documents the evaluation and enhancement process used to transform the Travlr Getaways application into a more secure, scalable, and production-aware system.
+This concludes the documented code review for the Travlr Getaways capstone artifact.
