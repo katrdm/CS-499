@@ -45,3 +45,7 @@ Security was treated as a foundational design principle across all enhancements.
 Defensive programming techniques were implemented to reduce vulnerabilities and protect system resources.
 
 This artifact demonstrates my ability to engineer secure, scalable, production-aware systems.
+## Source Code Files
+
+- [Database Enhancement Files](travlr_DB.zip)
+- [Algorithms Enhancement Files](CS499_M3_Enhancement2_Algorithms_Artifact.zip)
