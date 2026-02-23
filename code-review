@@ -1,0 +1,95 @@
+# Informal Code Review – Travlr Getaways
+
+## Overview
+
+This written code review serves as a walkthrough of the original Travlr Getaways application prior to enhancement. It outlines existing functionality, identifies areas for improvement, and explains the enhancements implemented across software engineering, algorithms, and database architecture.
+
+---
+
+## Existing Functionality
+
+The original Travlr Getaways application was developed using the MEAN stack (MongoDB, Express, Angular, Node.js).
+
+Core functionality included:
+
+- Public-facing travel package browsing
+- Administrative CRUD operations for trip management
+- RESTful API endpoints for data retrieval
+- MongoDB persistence layer
+
+The system was functional but designed primarily as a course prototype rather than a production-ready application.
+
+---
+
+## Code Analysis – Areas for Improvement
+
+After reviewing the original implementation, several improvement areas were identified:
+
+### 1. Architectural Structure
+Backend logic required clearer separation of concerns between routes, controllers, and middleware.
+
+### 2. Error Handling
+Error responses were inconsistent and could potentially expose internal server details.
+
+### 3. Database Validation
+Schema enforcement was minimal, increasing risk of malformed or malicious input.
+
+### 4. Query Efficiency
+Database queries did not implement indexing or pagination, limiting scalability.
+
+### 5. Security Controls
+Authentication and role-based access controls were limited, increasing potential attack surface.
+
+---
+
+## Planned and Implemented Enhancements
+
+### Software Design & Engineering Enhancements
+
+- Refactored backend into modular architecture.
+- Implemented centralized error-handling middleware.
+- Converted promise chains to async/await.
+- Secured configuration using environment variables.
+- Protected administrative routes with authentication logic.
+
+These improvements increased maintainability, reduced coupling, and improved security posture.
+
+---
+
+### Algorithms & Data Structures Enhancements
+
+- Implemented dynamic query filtering.
+- Added server-side pagination.
+- Introduced indexed search optimization.
+- Reduced redundant data retrieval.
+- Evaluated performance tradeoffs between read and write operations.
+
+These changes improved efficiency and scalability while reducing excessive data exposure.
+
+---
+
+### Database Enhancements
+
+- Implemented strict Mongoose schema validation.
+- Enforced required fields and data type constraints.
+- Added role-based access control (RBAC).
+- Introduced input validation middleware to prevent NoSQL injection.
+- Secured credentials using environment variables.
+
+These modifications strengthened data integrity and reinforced a security-first development approach.
+
+---
+
+## Alignment with CS 499 Outcomes
+
+This code review and enhancement process demonstrates:
+
+1. Collaborative system design through modular architecture.
+2. Professional communication through structured technical documentation.
+3. Application of algorithmic principles and performance tradeoffs.
+4. Use of modern tools and frameworks in full-stack development.
+5. A proactive security mindset that anticipates misuse and mitigates vulnerabilities.
+
+---
+
+This written code review documents the evaluation and enhancement process used to transform the Travlr Getaways application into a more secure, scalable, and production-aware system.
