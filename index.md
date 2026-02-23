@@ -1,38 +1,38 @@
-[Home](index.md) | [Code Review](code-review.md) | [Artifact](artifact.md)
-# Katerine Dubon Marroquin
-## Computer Science Graduate | Security-Focused Software Developer
+# Katerine Dubon
+## CS 499 Capstone ePortfolio
+### Security-Focused Software Developer
 
-Welcome to my CS 499 Capstone ePortfolio.
+---
 
-This portfolio represents the culmination of my Bachelor of Science in Computer Science program at Southern New Hampshire University. It showcases my growth in:
+Welcome to my Computer Science Capstone Portfolio.
 
-- Software Design and Engineering
-- Algorithms and Data Structures
+This ePortfolio showcases my ability to design, enhance, and secure a full-stack MEAN application while demonstrating mastery of:
+
+- Software Design & Engineering
+- Algorithms & Data Structures
 - Database Architecture
 - Secure Development Practices
 
-The featured artifact, **Travlr Getaways**, demonstrates my ability to design, enhance, and secure a full-stack MEAN application using modern development practices and a security-first mindset.
-
 ---
 
-## Professional Self-Assessment
+## Navigation
 
-Throughout my academic journey, I developed strong full-stack engineering skills while cultivating a proactive cybersecurity mindset. My work emphasizes secure backend architecture, modular design, performance optimization, and database governance.
-
-I approach system design by anticipating adversarial misuse, implementing validation controls, protecting sensitive resources, and evaluating algorithmic tradeoffs that impact performance and scalability.
-
-This portfolio demonstrates my ability to:
-
-- Design maintainable and secure architectures
-- Apply algorithmic reasoning to optimize systems
-- Implement structured database validation and access control
-- Communicate technical decisions clearly
-- Deliver production-aware full-stack solutions
-
----
-
-## Portfolio Sections
-
+- [Artifact – Travlr Getaways](artifact.md)
 - [Code Review Video](code-review.md)
-- [Travlr Getaways Artifact](artifact.md)
-- [Original & Enhanced Code Repository](https://github.com/katrdm/CS-499)
+- [Final Submission Document](CS499_Final_Project_Complete_Submission.docx)
+
+---
+
+## Professional Focus
+
+Throughout this capstone, I approached development with a security-first mindset.  
+Enhancements emphasized:
+
+- Modular architecture
+- Authentication-protected routes
+- Input validation & schema enforcement
+- Indexed database queries
+- Server-side pagination
+- Reduced attack surface exposure
+
+This portfolio reflects my readiness for secure backend development and cybersecurity-focused software engineering roles.
